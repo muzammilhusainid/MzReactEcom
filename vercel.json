@@ -6,7 +6,7 @@
         },
          {
             "source": "/product-detail/:productId",
-            "destination": "/"
+            "destination": "/product-detail/:productId"
         }
     ]
 }
