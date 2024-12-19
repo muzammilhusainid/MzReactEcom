@@ -96,7 +96,7 @@ const ProductDetailData = () => {
               })}
             </div>
             <div className="productPicView2 shadow-lg lg:w-96 lg:h-96 ">
-              <img src={viewPic} alt="productPic2" className='' />
+              <img src={viewPic?viewPic:""} alt="productPic2" className='' />
             </div>
           </div>
           <div className="productDetailArea shadow-lg w-auto lg:w-96 h-auto min-h-96 p-5 flex flex-col justify-start flex-wrap gap-5">
