@@ -33,9 +33,9 @@ const HeroSection = () => {
   return (
     <div>
       <div className='flex items-center relative'>
-        <button className='absolute flex justify-center items-center left-1 bg-gray-300 shadow-md shadow-black rounded-full h-10 w-10 text-xl font-bold' onClick={() => changePic("left")}><IoIosArrowBack /></button>
+        <button className='absolute flex justify-center items-center left-1 bg-black opacity-50 text-white shadow-inner shadow-white rounded-full h-10 w-10 text-xl font-bold' onClick={() => changePic("left")}><IoIosArrowBack /></button>
         <img src={heroPic[index]} alt="heroImg" className='h-40 md:h-96 w-screen' />
-        <button className='absolute flex justify-center items-center right-1 bg-gray-300 shadow-md shadow-black rounded-full h-10 w-10 text-xl font-bold' onClick={() => changePic("right")}><IoIosArrowForward /></button>
+        <button className='absolute flex justify-center items-center right-1 bg-black opacity-50 text-white shadow-inner shadow-white rounded-full h-10 w-10 text-xl font-bold' onClick={() => changePic("right")}><IoIosArrowForward /></button>
       </div>
     </div>
   )
