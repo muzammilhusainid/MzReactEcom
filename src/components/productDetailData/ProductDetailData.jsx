@@ -56,7 +56,7 @@ const ProductDetailData = () => {
       )
     })
     setRelatedProduct(getRelatedProduct.slice(0, 10))
-  }, [productId]);
+  }, [allProduct]);
   ///////////End useEffect////////////////////////
 
   const changePic = (index) => {
