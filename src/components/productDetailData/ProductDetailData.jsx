@@ -43,7 +43,7 @@ const ProductDetailData = () => {
         item.id == productId
       )
     })
-    if (detail[0]) {
+    if (detail) {
       setSingleProduct(detail[0]);
       setSingleProductPic(detail[0].images)
       setViewPic(singleProductPic[0])
@@ -96,12 +96,7 @@ const ProductDetailData = () => {
               })}
             </div>
             <div className="productPicView2 shadow-lg lg:w-96 lg:h-96 ">
-              {singleProductPic.slice(0,1).map((item, index)=>{
-                return(
-                  <img src={item} alt="productPic2" className='' key={index} />
-                )
-              })
-              }
+              <img src={viewPic} alt="productPic2" className='' />
             </div>
           </div>
           <div className="productDetailArea shadow-lg w-auto lg:w-96 h-auto min-h-96 p-5 flex flex-col justify-start flex-wrap gap-5">
@@ -124,7 +119,7 @@ const ProductDetailData = () => {
               <h1>₹ {Math.round(singleProduct.price)} /-</h1>
             </div>
             <div className="addCartButtom flex justify-center items-center gap-3 w-auto text-center rounded-xl py-1 bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white cursor-pointer" onClick={() => addCart(singleProduct)}>
-              <FaShoppingCart /><h1>Add to Cart</h1>
+              <FaShoppingCart/><h1>Add to Cart</h1>
             </div>
           </div>
         </div>
@@ -138,7 +133,7 @@ const ProductDetailData = () => {
           </div>
         </div>
         <div className="relatedProductArea">
-          <ProductsCard products={relatedProduct} addCart={addCart} />
+          <ProductsCard products={relatedProduct} addCart={addCart}/>
         </div>
       </div>
     </>
