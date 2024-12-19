@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="copyright text-xs text-center bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white py-3 flex flex-wrap justify-center">
+      <div className="copyright text-xs text-center bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] text-white py-1 md:py-2 flex flex-wrap justify-center">
        <p>&copy; Mz E-Com 2024-25 All rights reserved,</p> <p>Developed by Muzammil Husain</p>
       </div>
     </>
