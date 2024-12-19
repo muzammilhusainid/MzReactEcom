@@ -46,7 +46,6 @@ const ProductDetailData = () => {
     if (detail[0]) {
       setSingleProduct(detail[0]);
       setSingleProductPic(detail[0].images)
-      setViewPic(singleProductPic[0])
     }
     ///////////////////////////////////
 
