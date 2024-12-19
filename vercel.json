@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "rewrites": [
         {
@@ -6,3 +7,17 @@
         }
     ]
 }
+=======
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        },
+         {
+            "source": "/product-detail/:productId",
+            "destination": "/product-detail"
+        }
+    ]
+}
+>>>>>>> f0390cfc7c686f4b1e01886b6f16eb15b2d66b73
