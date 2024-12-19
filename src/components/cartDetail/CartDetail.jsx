@@ -154,7 +154,7 @@ const CartDetail = () => {
                                 </tfoot>
                             </table>
                         </div>
-                        <div className="couponArea bg-gray-100 rounded-lg w-fit md:w-1/2 lg:w-1/5 h-fit">
+                        <div className="couponArea bg-gray-100 rounded-lg w-[350px] md:w-1/2 lg:w-1/5 h-fit">
                             <div className="couponCode">
                                 <h1 className='text-lg p-1 text-white bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] rounded-t-lg font-semibold'>Apply Coupon Code</h1>
                                 <p className='text-[10px] text-justify p-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tenetur. Harum necessitatibus dicta quibusdam doloremque eum iusto unde quod pariatur? Magnam laborum minus praesentium autem explicabo soluta quo, error id!</p>

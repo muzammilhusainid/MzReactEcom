@@ -55,7 +55,7 @@ const activeMenuBorder=useLocation().pathname;
         </ul>
     )
     return (
-        <div className="sticky top-0 z-10">
+        <div className="sticky top-0 z-10 min-w-[350px]">
             <nav className='bg-gradient-to-r from-[#ff416c] to-[#ff4b2b]'>
                 <div className='flex justify-center'>
                     <div className="flex justify-between items-center lg:p-3 py-2 w-[1920px]">
