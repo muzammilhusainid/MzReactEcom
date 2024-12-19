@@ -100,7 +100,7 @@ const CartDetail = () => {
             {
                 selector.length > 0 ?
                     <div className='flex justify-center flex-wrap gap-4'>
-                        <div className="cartDetailArea overflow-x-auto">
+                        <div className="cartDetailArea overflow-x-auto w-[350px] md:w-auto">
                             <table className="text-left text-xs lg:text-base">
                                 <caption className="caption-top">
                                     <div className='flex justify-between items-center p-2 bg-gradient-to-r from-[#ff416c] to-[#ff4b2b] rounded-t-lg'>
