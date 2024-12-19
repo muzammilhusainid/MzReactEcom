@@ -31,7 +31,7 @@ const Track = () => {
                    <BiSupport className='text-5xl'/>
                 </div>
                 <div className="trackTitle ms-3">
-                    <h1 className='text-lg'>Help & Support</h1>
+                    <h1 className='text-lg'>Help Desk</h1>
                     <p>Available 24x7</p>
                 </div>
             </div>
