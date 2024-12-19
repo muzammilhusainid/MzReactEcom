@@ -13,7 +13,7 @@ const OrderThanxModal = ({billDetail}) => {
     return (
         <div>
             <div className="wrap fixed bg-black top-0 bottom-0 left-0 right-0 opacity-80"></div>
-            <div className="main w-2/3 px-5 py-5 bg-white text-center rounded-lg fixed left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
+            <div className="main w-2/3 px-2 py-5 bg-white text-center rounded-lg fixed left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
                 <h1 className='text-3xl lg:text-7xl font-bold'>!..Thank You...!</h1>
                 <h1 className='text-xl lg:text-4xl'>{billDetail.firstName} for Shoping</h1>
                 <Link to={"/"}>
