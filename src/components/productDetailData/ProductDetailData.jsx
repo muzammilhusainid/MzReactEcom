@@ -132,7 +132,7 @@ const ProductDetailData = () => {
           </div>
         </div>
         <div className="relatedProductArea">
-        {console.log(relatedProduct)}
+        {console.log(allProduct)}
           <ProductsCard products={relatedProduct} addCart={addCart}/>
         </div>
       </div>
