@@ -54,7 +54,7 @@ const ProductDetailData = () => {
         item.category === singleProduct.category
       )
     })
-    setRelatedProduct(getRelatedProduct.slice(0, 10))
+    setRelatedProduct(getRelatedProduct)
   }, [allProduct]);
   ///////////End useEffect////////////////////////
 
