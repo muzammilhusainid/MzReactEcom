@@ -48,7 +48,7 @@ const ProductDetailData = () => {
       setSingleProductPic(detail[0].images)
     }
     ///////////////////////////////////
-    setRelatedProduct(allProduct.filter((item) => { return (item.category === singleProduct.category)}).slice(0, 10))
+   
     
   }, [allProduct]);
   ///////////End useEffect////////////////////////
@@ -127,8 +127,8 @@ const ProductDetailData = () => {
           </div>
         </div>
         <div className="relatedProductArea">
-        {console.log(relatedProduct)}
-          <ProductsCard products={relatedProduct} addCart={addCart}/>
+        {console.log(allProduct.filter((item) => { return (item.category === singleProduct.category)}).slice(0, 10))}
+          <ProductsCard products={allProduct.filter((item) => { return (item.category === singleProduct.category)}).slice(0, 10)} addCart={addCart}/>
         </div>
       </div>
     </>
