@@ -49,6 +49,9 @@ const ProductDetailData = () => {
     }
     ///////////////////////////////////
 
+  }, [allProduct]);
+
+  useEffect(() => {
     const getRelatedProduct = allProduct.filter((item) => {
       return (
         item.category === singleProduct.category
@@ -56,6 +59,7 @@ const ProductDetailData = () => {
     })
     setRelatedProduct(getRelatedProduct.slice(0, 10))
   }, [allProduct]);
+   
   ///////////End useEffect////////////////////////
 
   const changePic = (index) => {
@@ -132,7 +136,7 @@ const ProductDetailData = () => {
           </div>
         </div>
         <div className="relatedProductArea">
-        {console.log(allProduct.filter((item)=>{return(item.category === singleProduct.category)}))}
+        {console.log(relatedProduct)}
           <ProductsCard products={allProduct.filter((item)=>{return(item.category === singleProduct.category)})} addCart={addCart}/>
         </div>
       </div>
