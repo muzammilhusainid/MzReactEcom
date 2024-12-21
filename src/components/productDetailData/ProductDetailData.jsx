@@ -47,10 +47,11 @@ const ProductDetailData = () => {
       setSingleProduct(detail[0]);
       setSingleProductPic(detail[0].images)
     }
-    
-    ////////////////Get Related Products///////////////////
+    ///////////////////////////////////
 
-    const getRelatedProductFun = () => {
+    
+
+    const getProduct = () => {
       const getRelatedProduct = allProduct.filter((item) => {
         return (
           item.category === singleProduct.category
@@ -58,7 +59,7 @@ const ProductDetailData = () => {
       })
       setRelatedProduct(getRelatedProduct.slice(0, 10))
     }
-    getRelatedProductFun()
+    getProduct()
   }, [allProduct]);
   ///////////End useEffect////////////////////////
 
