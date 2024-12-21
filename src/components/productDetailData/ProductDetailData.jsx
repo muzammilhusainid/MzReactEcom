@@ -54,7 +54,7 @@ const ProductDetailData = () => {
         item.category === singleProduct.category
       )
     })
-    setRelatedProduct(getRelatedProduct)
+    setRelatedProduct(getRelatedProduct.slice(0, 10))
   }, [allProduct]);
   ///////////End useEffect////////////////////////
 
@@ -132,6 +132,7 @@ const ProductDetailData = () => {
           </div>
         </div>
         <div className="relatedProductArea">
+        {console.log(relatedProduct)}
           <ProductsCard products={relatedProduct} addCart={addCart}/>
         </div>
       </div>
