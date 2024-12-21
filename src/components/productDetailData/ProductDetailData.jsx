@@ -51,15 +51,9 @@ const ProductDetailData = () => {
 
     
 
-    const getProduct = () => {
-      const getRelatedProduct = allProduct.filter((item) => {
-        return (
-          item.category === singleProduct.category
-        )
-      })
-      setRelatedProduct(getRelatedProduct.slice(0, 10))
-    }
-    getProduct()
+    
+      setRelatedProduct(allProduct.filter((item)=>{return(item.category === singleProduct.category)}))
+
   }, [allProduct]);
   ///////////End useEffect////////////////////////
 
@@ -138,7 +132,7 @@ const ProductDetailData = () => {
         </div>
         <div className="relatedProductArea">
         {console.log(relatedProduct)}
-          <ProductsCard products={allProduct.filter((item)=>{return(item.category === singleProduct.category)})} addCart={addCart}/>
+          <ProductsCard products={relatedProduct} addCart={addCart}/>
         </div>
       </div>
     </>
