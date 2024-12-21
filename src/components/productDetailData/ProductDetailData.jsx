@@ -34,7 +34,7 @@ const ProductDetailData = () => {
 
   const [viewPic, setViewPic] = useState()
 
-  const [relatedProduct, setRelatedProduct] = useState([]);
+ // const [relatedProduct, setRelatedProduct] = useState([]);
 
 
   useEffect(() => {
@@ -47,9 +47,7 @@ const ProductDetailData = () => {
       setSingleProduct(detail[0]);
       setSingleProductPic(detail[0].images)
     }
-    ///////////////////////////////////
-   
-    
+    ///////////////////////////////////    
   }, [allProduct]);
   ///////////End useEffect////////////////////////
 
