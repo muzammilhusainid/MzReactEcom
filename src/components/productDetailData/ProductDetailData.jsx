@@ -49,17 +49,18 @@ const ProductDetailData = () => {
     }
     ///////////////////////////////////
 
-  }, [allProduct]);
+    
 
-  useEffect(() => {
-    const getRelatedProduct = allProduct.filter((item) => {
-      return (
-        item.category === singleProduct.category
-      )
-    })
-    setRelatedProduct(getRelatedProduct.slice(0, 10))
+    const getProduct = () => {
+      const getRelatedProduct = allProduct.filter((item) => {
+        return (
+          item.category === singleProduct.category
+        )
+      })
+      setRelatedProduct(getRelatedProduct.slice(0, 10))
+    }
+    getProduct()
   }, [allProduct]);
-   
   ///////////End useEffect////////////////////////
 
   const changePic = (index) => {
