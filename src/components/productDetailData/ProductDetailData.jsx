@@ -125,7 +125,6 @@ const ProductDetailData = () => {
           </div>
         </div>
         <div className="relatedProductArea">
-        {console.log(allProduct.filter((item) => { return (item.category === singleProduct.category)}).slice(0, 10))}
           <ProductsCard products={allProduct.filter((item) => { return (item.category === singleProduct.category)}).slice(0, 10)} addCart={addCart}/>
         </div>
       </div>
