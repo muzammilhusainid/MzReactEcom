@@ -133,7 +133,7 @@ const ProductDetailData = () => {
         </div>
         <div className="relatedProductArea">
         {console.log(allProduct.filter((item)=>{return(item.category === singleProduct.category)}))}
-          <ProductsCard products={relatedProduct} addCart={addCart}/>
+          <ProductsCard products={allProduct.filter((item)=>{return(item.category === singleProduct.category)})} addCart={addCart}/>
         </div>
       </div>
     </>
