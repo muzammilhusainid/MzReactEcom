@@ -50,7 +50,10 @@ const ProductDetailData = () => {
     ///////////////////////////////////
 
     
+  }, [allProduct]);
 
+
+  useEffect(() => {
     const getProduct = () => {
       const getRelatedProduct = allProduct.filter((item) => {
         return (
